@@ -1,0 +1,13 @@
+.Name a {
+    color: #2a282a;
+    text-decoration: none;
+    margin-left: 26px;
+  }
+
+  .Name a:hover{
+    background-color:#fa8231;
+  }
+  .VerMais {
+    float: right;
+    margin-right: 25px;
+  }

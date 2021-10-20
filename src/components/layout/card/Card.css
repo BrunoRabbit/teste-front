@@ -1,0 +1,34 @@
+.Card {
+    background-color: #2a282a;
+    overflow: hidden;
+    flex-direction: row;
+    width: 16%;
+    height: 142px;
+    margin: 24px;
+    float: left; 
+    box-shadow: 0 4px 8px 0 #2a282a;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.Card:hover{
+    box-shadow: 0 8px 16px 0 #2a282a;
+}
+.container {
+    padding: 2px 16px,
+}
+.Card .Title {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+    color: #f0f0f0;
+    
+}
+.Card .Content {
+    color: #f0f0f0;
+    background-color: #fa8231;
+    height: 100px;
+    
+}
+/* img {
+  border-radius: 5px 5px 0 0;
+}*/
