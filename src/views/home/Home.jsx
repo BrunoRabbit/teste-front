@@ -1,51 +1,63 @@
 import React from 'react';
 import Card from '../../components/layout/card/Card';
 import Title from '../../components/layout/title/Title';
-import {useEffect, useState} from 'react';
-import axios from 'axios';
+import Image from '../../images/imagem.png';
+import ImageUser from '../../images/user.png';
+import ImageNews from '../../images/news.png';
 
-const Home = props => {
+import { AlbumContext } from '../../components/context/AlbumProvider';
+import { ArtistsContext } from '../../components/context/ArtistsProvider';
+import { NewsContext } from '../../components/context/NewsProvider';
 
-    const [lista, setLista] = useState([]);
+const Home = () => {
 
-
-  useEffect(()=>{ 
-    // TODO - puxar a API
-    axios.get('http://api.music-story.com/en/genre/1/albums.json')
-      .then(data => console.log(data?.data));
-
-    setLista([
-          {id:1, title: 'yanlindo'},
-          {id:2, title: 'rikaholindo'},
-          {id:3, title: 'matheus'},
-          {id:4, title: 'japinha'},
-          {id:5, title: 'jao'},
-
-      ])
-  },[]);
-  
-    return(
+    return (
         <div>
             <div>
-                <Title titulo={"Álbuns"} to={'/album'} />
-                {lista.map(response=>(
-                    <Card title={response.title} /> 
-                ))}
+                <div>
+                    <Title titulo={"Albums"} to={'/album'} />
+                    <AlbumContext.Consumer>{
+                        (value) => value.map(album =>
+                            <Card
+                                title={album.title}
+                                image={Image}
+                                release={'Release date'}
+                                content={album.release_date}
+                            />).slice(0, 5)}
+                    </AlbumContext.Consumer>
+                </div>
+
             </div>
             <div>
-                <Title titulo={"Notícias"} to={'/news'} />
-                {lista.map(response=>(
-                    <Card title={response.title} /> 
-                ))}
+                <div>
+                    <Title titulo={"News"} to={'/news'} />
+                    <NewsContext.Consumer>
+                        {(value) => value.map(news =>
+                            <Card title={news.title}
+                                image={ImageNews}
+                                release={'Creation date'}
+                                content={news.creation_date}
+                            />).slice(0, 5)}
+                    </NewsContext.Consumer>
+                </div>
             </div>
             <div>
-                <Title titulo={"Artistas"} to={'/artists'} />
-                {lista.map(response=>(
-                    <Card title={response.title} /> 
-                ))}
+                <div>
+                    <Title titulo={"Artists"} to={'/artists'} />
+                    <ArtistsContext.Consumer>
+                        {(value) => value.map(artists =>
+                            <Card title={artists.name}
+                                image={ImageUser}
+                                release={'Creation date'}
+                                content={artists.creation_date}
+                            />).slice(0, 5)}
+                    </ArtistsContext.Consumer>
+
+                </div>
             </div>
-    </div>
+        </div>
     );
 }
+
 
 export default Home;

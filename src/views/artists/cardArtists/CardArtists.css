@@ -1,0 +1,15 @@
+.CardArtists .Artists-Card{
+    box-shadow: 0 2px 2px 0 #fa8231; 
+    text-align: center;
+    flex-direction: row;
+    float: left;
+    margin: 15px;
+    width: 22%;
+
+}
+.CardArtists .Artists-User-Icon{
+    background: url('../../../images/user.png');
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+}

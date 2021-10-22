@@ -7,7 +7,7 @@ import News from '../../../views/news/News';
 import Artists from '../../../views/artists/Artists';
 import Home from '../../../views/home/Home';
 
-const Content = (props) => {
+const Content = () => {
     
     return(
         <div className='ContainerContent'>

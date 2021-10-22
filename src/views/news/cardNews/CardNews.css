@@ -1,0 +1,23 @@
+.card-horizontal {
+  display: flex;
+  padding: 10px;
+  flex: 1 1 auto;
+  box-shadow: 0 2px 2px 0 #fa8231; 
+  margin: 10px 15px 10px 15px;
+}
+.card-title {
+  padding-left: 5px;
+  display: inline;
+}
+.card-text {
+  padding-left: 5px;
+  display: inline;
+  font-size: 14px;
+}
+.card-footer {
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+.card-subtitle {
+  margin: 3px 5px;
+}

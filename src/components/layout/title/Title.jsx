@@ -9,7 +9,7 @@ const Title = (props) => {
     return (
         <div className="Name">
             <a href="/#">{text}</a>
-            <Link className="VerMais" to={props.to}>Ver Mais</Link>
+            <Link className="VerMais" to={props.to}>See more</Link>
         </div>
         
     );

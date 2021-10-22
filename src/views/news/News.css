@@ -1,16 +1,17 @@
-.Album .Album-title {
+.News .News-title {
     display: flex;
     padding-left: 20px;
 
 }
-.Album .Album-icon{
-    background: url('../../images/disc.png');
+.News .icon{
+    background: url('../../images/newsIcon.png');
     height: 35px;
     width: 35px;
     border-radius: 14px;
+    background-color: #2a282a;
     background-size: cover;
 }
-.Album .Album-topics{
+.News .Topics-news{
     padding-top: 5px;
     padding-left: 5px;
 }
