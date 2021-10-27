@@ -8,6 +8,7 @@ Utilizei um comando em Propriedades > Destino e ao final dela, logo depois das a
 " --disable-web-security --user-data-dir="D:/Chrome"
 
 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
