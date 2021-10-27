@@ -1,6 +1,7 @@
 ## Observação
 
-Para conseguir consumir dados da API, tive que desabilitar o a segurança do Google Chrome(Erro de CORS).
+
+Para conseguir consumir dados da API, tive que desabilitar a segurança do Google Chrome(Erro de CORS).
 
 Utilizei um comando em Propriedades > Destino e ao final dela, logo depois das aspas do atalho coloquei esse código
 
