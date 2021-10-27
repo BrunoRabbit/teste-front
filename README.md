@@ -1,3 +1,12 @@
+## Observação
+
+Para conseguir consumir dados da API, tive que desabilitar o a segurança do Google Chrome(Erro de CORS).
+
+Utilizei um comando em Propriedades > Destino e ao final dela, logo depois das aspas do atalho coloquei esse código
+
+" --disable-web-security --user-data-dir="D:/Chrome"
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
